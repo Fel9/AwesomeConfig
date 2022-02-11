@@ -19,7 +19,8 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
 
-
+awful.spawn.with_shell("~/.config/awesome/autostart.sh")
+--awful.spawn.with_shell("picom -b --config  $HOME/.config/awesome/picom.conf")
 
 
 -- {{{ Error handling
@@ -207,7 +208,7 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s })
+    s.mywibox = awful.wibar({ position = "top", screen = s, height = 18})
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
