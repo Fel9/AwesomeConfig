@@ -17,10 +17,11 @@ run volumeicon
 #you can set wallpapers in themes as well
 #run applications from startup
 run nitrogen --restore
+run /usr/lib/geoclue-2.0/demos/agent &
 #run redshift -l -26.243440:-48.637940
 run kdeconnect-indicator
-run gnome-clocks
+# run gnome-clocks
 run copyq
-run mailspring
-run redshift-scheduler
-run slimbookbattery
+# run mailspring
+run redshift
+# run slimbookbattery
