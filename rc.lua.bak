@@ -19,8 +19,6 @@ require("awful.autofocus")
 local beautiful = require("beautiful")
 
 
--- Xrandr utility
-local xrandr = require("xrandr")
 
 -- Notification library
 
@@ -449,7 +447,6 @@ awful.key({ modkey }, "s", hotkeys_popup.show_help, { description = "show help",
     ),
 
     -- Standard program and custom keybinds
-    awful.key({ modkey }, "u", function() xrandr.xrandr() end),
 
     awful.key(
 
