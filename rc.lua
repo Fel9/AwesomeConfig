@@ -449,7 +449,7 @@ awful.key({ modkey }, "s", hotkeys_popup.show_help, { description = "show help",
     ),
 
     -- Standard program and custom keybinds
-    awful.key({ modkey }, "u", function() xrandr.xrandr() end),
+    awful.key({ modkey }, "y", function() xrandr.xrandr() end),
 
     awful.key(
 
