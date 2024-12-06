@@ -14,11 +14,13 @@ run xfce4-power-manager
 run kdeconnect-indicator
 run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 run /usr/lib/geoclue-2.0/demos/agent &
-run intel-undervolt apply
+# run intel-undervolt apply
 run numlockx on
 run volumeicon
 run flameshot
-run redshift
+run redshift-gtk
 run copyq
 run nitrogen --restore
-run flatpak run com.github.wwmm.pulseeffects
+# run flatpak run com.github.wwmm.pulseeffects
+run easyeffects
+run youtube-music
